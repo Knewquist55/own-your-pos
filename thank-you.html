@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thank you for contacting RestaurantSynk." />
+  <title>Thank You | RestaurantSynk</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="final-cta">
+    <div class="container final-cta-inner">
+      <img src="assets/restaurantsynk-logo-stacked.png" alt="RestaurantSynk" class="thankyou-logo" />
+      <p class="eyebrow">Thank you</p>
+      <h2>Your request has been received</h2>
+      <p>
+        Thanks for reaching out to RestaurantSynk. We will review your information
+        and follow up with next steps.
+      </p>
+      <div class="final-cta-actions">
+        <a href="https://calendly.com/kitchen-restaurantsynk/30min" class="btn btn-primary">
+          Book a Time Now
+        </a>
+        <a href="index.html" class="btn btn-secondary">
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <div class="consent-banner" id="consent-banner" hidden>
+    <div class="consent-inner">
+      <div class="consent-copy">
+        <p class="consent-title">Your privacy choices</p>
+        <p>
+          We use analytics and ad tracking only if you say yes. You can accept or decline.
+          Essential site features stay on either way.
+        </p>
+      </div>
+      <div class="consent-actions">
+        <button type="button" class="btn btn-secondary consent-btn" id="consent-decline">Decline</button>
+        <button type="button" class="btn btn-primary consent-btn" id="consent-accept">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.RS_TRACKING_IDS = {
+      ga4: 'G-XXXXXXXXXX',
+      ads: 'AW-XXXXXXXXXX'
+    };
+    window.RS_COOKIE_KEY = 'rs_tracking_consent_v1';
+    window.RS_LOAD_CONVERSION_ON_THANK_YOU = true;
+    window.RS_ADS_CONVERSION_SEND_TO = 'AW-XXXXXXXXXX/XXXXXXXXXXXXXXX';
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
