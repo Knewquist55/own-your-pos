@@ -1,4 +1,4 @@
-:root {
+ :root {
   --bg: #07111b;
   --text: #f3f7fb;
   --text-soft: #c5d0db;
@@ -48,21 +48,12 @@ a { color: inherit; text-decoration: none; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 700;
 }
 
-.brand-mark {
-  width: 38px;
-  height: 38px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent));
-  color: #031019;
-  font-size: 0.9rem;
-  font-weight: 800;
+.brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .site-nav {
@@ -317,6 +308,20 @@ a { color: inherit; text-decoration: none; }
 .final-cta h2 { max-width: none; }
 .final-cta p:last-of-type { max-width: 720px; margin: 18px auto 0; color: var(--text-soft); }
 
+.footer-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.thankyou-logo {
+  width: min(220px, 50vw);
+  height: auto;
+  display: block;
+  margin: 0 auto 22px;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   background: rgba(0, 0, 0, 0.16);
@@ -331,7 +336,6 @@ a { color: inherit; text-decoration: none; }
   padding: 20px 0;
 }
 
-.footer-brand { margin: 0; font-weight: 800; }
 .footer-copy { margin: 4px 0 0; color: var(--text-muted); }
 
 .footer-links {
@@ -364,6 +368,8 @@ a { color: inherit; text-decoration: none; }
   .feature-row { grid-template-columns: 1fr; gap: 8px; }
   .btn, .nav-cta { width: 100%; }
   .hero-actions, .final-cta-actions { flex-direction: column; }
+  .brand-logo { height: 38px; }
+  .footer-logo { height: 36px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .footer-links { text-align: left; }
 }
